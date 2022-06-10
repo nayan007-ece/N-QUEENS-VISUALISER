@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N-Queen-Visualiser</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h2 style="text-align: center;">
+        N-Queens Visualiser<i class="fas fa-crown" style="color: #fdfffc"></i>
+      </h2>
+    </header>
+    <div class="steps">
+    <p><b>Step 1:</b> Enter the number of Queens.</p>
+    <p><b>Step 2:</b>Set the speed which you want (You can increase/decrease later also).</p>
+    <p><b>Step 3:</b> Click on the PLAY button.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="n-queen">
+      <div class="inputbox">
+        <input type="number" class="numberbox" id="numberbox" required />
+        <label>Enter total Queens</label>
+      </div>
+      <div class="slider-container">
+        <input
+          class="slider"
+          id="slider"
+          type="range"
+          min="0"
+          max="100"
+          value="60"
+        />
+        <div id="progress-bar"></div>
+      </div>
+      <button class="play-button" id="play-button">
+        <i class="fa fa-play" aria-hidden="true"></i> Play
+      </button>
+    </div>
+
+    <div class="queen-arrangement" id="queen-arrangement"></div>
+    <div id="n-queen-board"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
